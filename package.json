@@ -1,0 +1,25 @@
+{
+  "name": "thursday",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "s1062031",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s1062031/pu410620319.git"
+  },
+  "bugs": {
+    "url": "https://github.com/s1062031/pu410620319/issues"
+  },
+  "homepage": "https://github.com/s1062031/pu410620319#readme",
+  "description": "",
+  "dependencies": {
+    "@line/bot-sdk": "^6.7.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0"
+  }
+}
