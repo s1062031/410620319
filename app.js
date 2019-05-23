@@ -16,6 +16,7 @@ app.use(koaBodyparser());
 router.post("/",function(abc){
     if(LinebotSDK.validateSignature(abc.request.body,channelSecret)){
         abc.status =200;
+        abc.request.body.events.map(MessageHandler);
     }else{
         abc.status=401;
         abc.body="Authorize failed.";
@@ -25,6 +26,10 @@ router.post("/",function(abc){
 app.use(router.routes());
 
 const server =app.listen(process.env.PORT || 8080);
+
+async function MessageHandler(event){//async 非同步
+    console.log(event);
+}
 
 
 
