@@ -1,4 +1,4 @@
-const linebotSDK=required("@line/bot-sdk");
+const LinebotSDK = require("@line/bot-sdk");
 
 const koa = require("koa");
 const koaBodyparser = require("koa-bodyparser");
