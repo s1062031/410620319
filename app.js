@@ -9,7 +9,7 @@ const channelAccessToken = process.env.channelAccessToken;
 
 const lineAPI = new LinebotSDK.Client({
     "channelSecret":channelSecret,
-    "channelAccessSecret":channelAccessToken
+    "channelAccessToken":channelAccessToken
 });
 
 const app = new koa();
